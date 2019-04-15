@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    color: #C2C2C2;
+    background-color: #F1F1F1;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+.container{
+    width: 100%;
+    padding: 0 10%;
+    margin: 0 auto;
+}
+
+.search-wrap{
+    height: 100px;
+    margin: 50px 0 10px;
+}
+
+.search-input{
+    background-color: transparent;
+    display: inline-block;
+    width: calc(100% - 100px);
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.search-input::-webkit-input-placeholder{
+    color: #C2C2C2;
+}
+
+.search-button{
+    display: inline-block;
+    vertical-align: bottom;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 100%;
+    background: transparent url("img/magnifier.svg");
+    background-size: contain;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.search-button:hover {
+    transform: scale(1.1);
+}
+
+.list-wrap{
+    width: 30%;
+    display: inline-block;
+}
+
+.list-wrap:nth-child(2) {margin: 0 5%;}
+
+.list-header{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.list-body{
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-item{
+    margin-bottom: 10px;
+}
+
+.list-item a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgba(118,117,128,0.05);
+    border-radius: 5px;
+}
+
+.list-item img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-size: 50px;
+}
+
+.circle img{ border-radius: 50%; }
+
+.list-item .list-element-text{
+    color: #ACACAE;
+    display: inline-block;
+    width: calc(100% - 55px);
+    vertical-align: top;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.list-item a:hover{
+    background-color: rgba(118,117,128,0.1);
+}
+
+.list-item a:hover .list-element-text{
+    color: #ec5a62;
+}
+
+.list-item a:active{
+    background-color: rgba(118,117,128,0.15);
+}
+
+.list-item a:active .list-element-text{
+    font-size: 1.1em;
+}
